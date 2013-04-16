@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "CreateEvent";
+}
+
+<script type="text/javascript">
+            var tocurrent1 = document.getElementById('event');
+            var tocurrent2 = document.getElementById('createevent');
+            tocurrent1.setAttribute("class", "nav-top-item current");
+            tocurrent2.setAttribute("class", "current");
+</script>
+<h2>CreateEvent</h2>
+
+<div>
+<img alt="" src="../../Content/images/noramlevents.png"  />
+<img alt="" src="../../Content/images/setupshop.png" />
+<img alt="" src="../../Content/images/shutupshop.png" />
+<img alt="" src="../../Content/images/shopfiitting.png" />
+</div>
+
+<div>
+<table id="normalevent">
+<tr><h2>基本信息<h2></tr>
+<tr>@Html.Label("事件类型编号：") @Html.TextBox("txtTypeCode")</tr>
+<tr>@Html.Label("店号：") @Html.DropDownList("ddlStoreNo","")</tr>
+<tr>@Html.Label("事件简述：") @Html.TextBox("txtEventDescribe")</tr>
+</table>
+</div>

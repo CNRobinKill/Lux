@@ -37,11 +37,12 @@
                     </ul>
                 </li>
                 <!-- 2nd menu -->
-                <li><a href="#" class="nav-top-item current">事件管理</a>
-                    <ul>
+                <li><a href="#" class="nav-top-item" id="event">事件管理</a>
+                    <ul id="EventUl">
                         <li><a href="#">事件查询</a></li>
-                        <li><a href="#" class="current">事件类管理</a></li>
-                        <li><a href="#">创建事件</a></li>
+                        <li><a href="#">事件类管理</a></li>
+                        <!--<li><a href="#">创建事件</a></li>-->
+                        <li>@Html.ActionLink("创建事件", "CreateEvent", "Home", new { id = "createevent" })</li>
                         <li><a href="#">事件报表</a></li>
                     </ul>
                 </li>

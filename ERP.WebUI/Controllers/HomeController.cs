@@ -14,5 +14,9 @@ namespace ERP.WebUI.Controllers
         {
             return View();
         }
+        public ActionResult CreateEvent() 
+        { 
+            return View(); 
+        }
     }
 }
